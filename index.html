@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script async src="app.js"></script>
+</head>
+<body>
+    <div class="container flex justify align">
+        <div class="firstBox">
+            <ul class="firstList flex justify">
+                <li class="firstItem">Demo</li>
+                <li class="firstItem">Shop</li>
+                <li class="firstItem">Product</li>
+                <li class="firstItem">Sale</li>
+                <li class="firstItem">Blog</li>
+            </ul>
+        </div>
+        <div class="Logo">
+            <img src="Kalles_demo.svg" alt="">
+        </div>
+        <div class="iconBox">
+            <ul class="iconList flex justify">
+                <li class="lastItem"><i class="fas fa-search"></i></li>
+                <li class="lastItem"><i class="far fa-user"></i></li>
+                <li class="lastItem"><i class="far fa-heart"></i></li>
+                <li class="lastItem" id="cart">
+                    <i class="fas fa-shopping-bag" ></i>
+                <span id="total">0.00</span>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h2>Product List</h2>
+        </div>
+        <div id="cardBox" >
+           
+        </div>
+    </div>
+
+
+    <div id="overlay">
+            
+    </div>
+
+
+    <div id="sideBar">
+        <div class="header flex align justify">
+            <span class="heading">SHOPPING CART</span> <i class="far fa-times-circle" id="closeSideBar"></i> 
+        </div>
+        
+        <div class="shoppingCart">
+            <div id="card">
+
+            </div>
+            <div id="bottom">
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{margin: 0px;padding: 0px;list-style-type: none;text-decoration: none;box-sizing: border-box;
+font-family: sans-serif;}
+
+.flex{display: flex;}
+.justify{justify-content: space-between;}
+.align{align-items: center;}
+.cursor{cursor: pointer;}
+
+.container{position: relative;width: 100vw;box-shadow: 0px 0px 5px black;padding: 20px;}
+.container ul li{padding:10px 20px;cursor: pointer;margin-left: 5px;text-align: center;}
+.container .iconBox ul li{padding: 10px!important;}
+
+
+
+
+.main{width: 100vw;}
+.main .header{text-align: center;padding-top: 20px;}
+.main .card .imgBox #add{position: absolute;}
+.main #cardBox{display: flex; flex-wrap: wrap;}
+.main #cardBox .card{width: 170px;position: relative;margin: 20px 50px;border: 2px solid black;display: flex;flex-direction: column;align-items: center;}
+.main #cardBox .card img{width: 150px;}
+.main #cardBox .card .textBox{text-align: center;}
+.main #cardBox .card .textBox #add{padding: 5px 15px; border-radius: 20px;background-color: #113CFC;color: white;position: absolute;top: 35%;left: 27%;display: none;}
+.main #cardBox .card:hover #add{display: block;}
+
+
+
+#sideBar{width: 30vw;border: 2px solid black;height: 100vh;position: fixed;right: 0px;top: 0px;background-color: white;transform: translate(100%,0%);transition: 0.4s;overflow-y: scroll;}
+#sideBar .header{border-bottom: 2px solid rgb(187, 187, 187);}
+#sideBar .header span{padding: 20px 10px;}
+#sideBar .header i{margin-right: 10px;cursor: pointer;animation-name: round;animation-duration: 2s;animation-iteration-count: infinite;animation-timing-function: linear;font-size: 20px;}
+#sideBar .shoppingCart{position: relative;}
+#sideBar .shoppingCart #bottom{position: fixed;bottom: 0px;padding: 20px 50px;}
+#sideBar .shoppingCart #card .card{width: 80%;margin: 0px auto;}
+#sideBar .shoppingCart #card .card .imgBox img{width: 100px;}
+
+#overlay{background-color: rgba(0, 0, 0, 0.4);width: 100vw;position: fixed;top: 0px;left: 0px;height: 100vh;display: none;}
+
+
+@keyframes round{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
