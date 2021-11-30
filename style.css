@@ -9,6 +9,9 @@ font-family: sans-serif;}
 .container{position: relative;width: 100vw;box-shadow: 0px 0px 5px black;padding: 20px;}
 .container ul li{padding:10px 20px;cursor: pointer;margin-left: 5px;text-align: center;}
 .container .iconBox ul li{padding: 10px!important;}
+.container .iconBox #cart{position: relative;}
+.container .iconBox #cart i{font-size: 20px;}
+.container .iconBox #cart #num{position: absolute;font-size: 10px;background-color: black;color: white;padding: 5px 7px;border-radius: 50px;top: -6%;left: 75%;}
 
 
 

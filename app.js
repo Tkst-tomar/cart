@@ -4,6 +4,7 @@
     var sidebarCart = ""
     var cart1 = ""
     var total = 0
+    var totalItem = 0
 document.getElementById("cart").onclick = function(){
     side.style.transform = "translate(0%,0%)"
     document.getElementById("overlay").style.display = "block"
@@ -59,8 +60,8 @@ function cart(value)
                     }
                 }
             }
-        
-
+            document.getElementById("num").style.left = "25%"
+totalItem++
             data.forEach(key => {
                 filterData.forEach(value => {
                     if(key.name==value.pname){
@@ -83,6 +84,8 @@ function cart(value)
             });
             console.log(total)
             document.getElementById("bottom").innerHTML = `<h3>Total:- $ ${total}</h3>`
+            document.getElementById("total").innerHTML = ` $ ${total}`
+            document.getElementById("num").innerHTML = ` ${totalItem}`
             total = 0
             document.getElementById("card").innerHTML = sidebarCart
             sidebarCart = ""
@@ -99,7 +102,7 @@ function deleteItem(value){
                 }
             });
 
-
+totalItem--
 
             data.forEach(key => {
                 filterData.forEach(value => {
@@ -127,6 +130,9 @@ function deleteItem(value){
             });
             console.log(total)
             document.getElementById("bottom").innerHTML = `<h3>Total:- $ ${total}</h3>`
+            document.getElementById("total").innerHTML = `  $${total}`
+            document.getElementById("num").innerHTML = ` ${totalItem}`
+
             total = 0
             document.getElementById("card").innerHTML = sidebarCart
             sidebarCart = ""
